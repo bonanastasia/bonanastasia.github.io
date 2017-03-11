@@ -11,27 +11,26 @@ body{
 header{
 	background-color: #fff;
 	border-bottom: 3px solid #ccc;
-	height:80px;
 }
 #header-info{
 	display:flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	align-items: stretch;
 	max-width: 960px;
 	margin: 0 auto;
+	font-size:32px;
 
 }
 
 h1{
 
-	height:80px;
 	background-color: #4aaaa5;
 	font-size: 36px;
 	color: #fff;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	float:left;
 	margin:0;
-	margin-left:10px;
 	padding: 20px;
 	
 }
@@ -61,6 +60,9 @@ nav a{
 	font-size:20px;
 	color: #ccc;
 	text-align: center;
+}
+span{
+	color:#ccc;
 }
 a:link {
     text-decoration: none;
@@ -314,4 +316,99 @@ footer{
 #img1{
 	position: relative;
 } 
+
+@media screen and (max-width: 640px) {
+  
+  .main {
+  	display:block;
+    width: 500px;
+    margin: 20px;
+  }
+  h1{
+  	width:100%;
+  	text-align: center;
+  	margin-left:0px;
+  }
+
+  h2{
+  	font-size:25px;
+  	padding:20px;
+  	padding-bottom: 30px;
+  }
+
+  .navigation{
+  	width: 100%;
+  	background-color: #fff; 
+  	display: flex;
+  	justify-content: space-around;
+  }
+  
+  #about{
+  	display: flex;
+  	flex-wrap: wrap;
+    width: 100%;
+    margin: 10px;
+    float:left;
+  }
+  
+  h2{
+  	width: 100%;
+  }
+
+  aside{
+  	display: block;
+  	width: 100%;
+  	margin:10px;
+  	float: left;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  
+  .main {
+  	display:block;
+    width: 700px;
+    margin: 20px;
+  }
+
+  h2{
+  	font-size:25px;
+  	padding:20px;
+  	padding-bottom: 30px;
+  }
+  
+  #about{
+  	display: flex;
+  	flex-wrap: wrap;
+    width: 100%;
+    margin: 10px;
+    float:left;
+  }
+  
+  h2{
+  	width: 100%;
+  }
+
+  img#bio-image{
+  	width: 100%;
+  	height: 100%;
+  	display: block;
+  }
+
+  aside{
+  	display: block;
+  	width: 100%;
+  	margin:10px;
+  	float: left;
+  }
+  .images{
+  	width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+  }
+}
 	

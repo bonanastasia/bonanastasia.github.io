@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta="utf-8">
+	<meta charset="utf-8">
 	
 	<title>Basic portfolio site!</title>
 		
@@ -17,10 +17,14 @@
 			
 			<h1>Anastasia Marie Goodwin</h1>
 
-				<nav>
-					<a href="index.html">About |</a>
+				<nav class="navigation">
+					<a href="index.html">About</a>
 
-					<a href="portfolio.html" target="_blank">Portfolio |</a>
+					<span>|</span>
+
+					<a href="portfolio.html" target="_blank">Portfolio</a>
+
+					<span>|</span>
 
 					<a href="contact.html" target="_blank">Contact</a>
 				</nav>
@@ -36,41 +40,43 @@
 
 		<section id="about">
 
-			<h2>Portfolio</h2>
+				<h2>Portfolio</h2>
+
+				<div class="images">
 
 
-			<div id="container-image1">
+					<div id="container-image1">
 
-					<img id= "portfolioImage1" src="assets/images/drop_the_douchebag.jpg" alt="drop the douchebag">
+							<img id= "portfolioImage1" src="assets/images/drop_the_douchebag.jpg" alt="drop the douchebag">
 
-							<p id="overlay1">Illustrations</p>
+									<p id="overlay1">Illustrations</p>
+
+					</div>
+
+
+					<div id="container-image2">
+						<img id="portfolioImage2" src="assets/images/fuck_anxiety.jpg" alt="fuck anxiety">
+
+							<p id="overlay2">Coding Projects</p>
+
+					</div>
+
+					<div id="container-image3">
+						<img id="portfolioImage3" src="assets/images/Tinder_skittles.jpg" alt="Tinder skittles">
+
+							<p id="overlay3">Games</p>
+							
+					</div>
+
+
+					<div id="container-image4">
+						<img id="portfolioImage4" src="assets/images/finger_bang_sign.jpg" alt="finger bang">
+
+							<p id="overlay4">Blog</p>
+							
+					</div>
 
 			</div>
-
-
-			<div id="container-image2">
-				<img id="portfolioImage2" src="assets/images/fuck_anxiety.jpg" alt="fuck anxiety">
-
-					<p id="overlay2">Coding Projects</p>
-
-			</div>
-
-			<div id="container-image3">
-				<img id="portfolioImage3" src="assets/images/Tinder_skittles.jpg" alt="Tinder skittles">
-
-					<p id="overlay3">Games</p>
-					
-			</div>
-
-
-			<div id="container-image4">
-				<img id="portfolioImage4" src="assets/images/finger_bang_sign.jpg" alt="finger bang">
-
-					<p id="overlay4">Blog</p>
-					
-			</div>
-
-
 
 		</section>
 
@@ -84,6 +90,8 @@
 				<!--here's where we link to linkedIn-->
 				<a href="https://www.linkedin.com/in/anastasia-goodwin-02966755" target="_blank">
 				<img class="icon" src="assets/images/linkin_icon.png" alt="Linkedin link">
+				</a>
+
 				<!--here's where we link to StackOverflow-->
 				<a href="http://stackoverflow.com/users/7586124/anastasia-marie" target="_blank">
 				<img class="icon" src="assets/images/stack_overflow_icon.png" alt="StackOverflow link">
