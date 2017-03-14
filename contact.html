@@ -1,87 +1,137 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-	<meta charset="UTF-8"/>
-	<title>Basic portfolio site!</title>	
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+    <title>Anastasia Marie Goodwin</title>
 
-<body>
-	
-	<header>
-	
-	<section id="header-info">
-			
-			<h1>Anastasia Marie Goodwin</h1>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-				<nav class="navigation">
-					<a href="index.html">About</a>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-					<span>|</span>
+    <!-- Custom styles for this template -->
+    <link href="assets/css/bootstrap_Portfolio.css" rel="stylesheet">
 
-					<a href="portfolio.html" target="_blank">Portfolio</a>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
 
-					<span>|</span>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-					<a href="contact.html" target="_blank">Contact</a>
-				</nav>
+    <link href="https://fonts.googleapis.com/css?family=Gravitas+One|Source+Code+Pro|Source+Serif+Pro" rel="stylesheet">
 
-		</section>
+  </head>
 
-	</header>
+  <body>
+    
+   <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-header">
+          <div class="navbar-header">
+              <span class="brand-name">AMG</span>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html" target="_blank">Home</a></li>
+              <li><a href="contact.html" target="_blank">Contact</a></li>
+              <li><a href="portfolio.html" target="_blank">Portfolio</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </header> 
+
+    <div class="container">
+
+      <section id="contact" class="content-section text-center">
+        <div class="contact-section">
+            <div class="container" id="form-container">
+              <h2>Connect with me!</h2>
+              <p>Feel free to reach out to me by filling out this form or by connecting with me on Instagram</p>
+              <div class="row" id="form-fields">
+                <div class="col-md-8 pull-left">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label for="exampleInputName2">Name</label>
+                      <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail2">Email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+                    </div>
+                    <div class="form-group ">
+                      <label for="exampleInputText">Your Message</label>
+                     <textarea  class="form-control" placeholder="Description"></textarea> 
+                    </div>
+                    <button type="submit" class="btn btn-default">Send Message</button>
+                  </form>
+
+                  <hr>
+                    <h3>Our Social Sites</h3>
+                  <ul class="list-inline banner-social-buttons">
+                    <li><a href="https://www.instagram.com/anagoodwin/?hl=en" class="btn btn-default btn-lg"><i class="fa fa-twitter"> <span class="network-name">Instagram</span></i></a></li>
+                    <li><a href="https://www.etsy.com/shop/thenaughtynarwhal" class="btn btn-default btn-lg"><i class="fa fa-facebook"> <span class="network-name">Etsy</span></i></a></li>
+                    <li><a href="https://www.redbubble.com/people/Anastasiamarie/shop?asc=u" class="btn btn-default btn-lg"><i class="fa fa-youtube-play"> <span class="network-name">Redbubble</span></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+    </div> <!-- /container -->
+
+   
+      <footer>
+      <div class="row">
+      <div class="col-xs-6 col-md-8 col-sm-4">
+        <span>&copy; Copyright Anastasia Marie Goodwin</span>
+      </div>
+      
+      <div class="col-xs-6 col-md-4 col-sm-8">
+        <!-- class="nav navbar-nav navbar-right " -->
+    
+        <ul class= "pull-right" id="social-icons">
+            <li><a  class= "icon-container" href="https://github.com/bonanastasia" target="_blank"><img class="icon" src="assets/images/cat.png" alt="Github link">
+            </a></li>
+
+            <li><a class= "icon-container" href="https://www.linkedin.com/in/anastasia-goodwin-02966755" target="_blank"><img class="icon" src="assets/images/linkin_icon.png" alt="Linkedin link">
+            </a></li>
+
+            <li><a class= "icon-container" href="http://stackoverflow.com/users/7586124/anastasia-marie" target="_blank"><img class="icon" src="assets/images/stack.ico">
+            </a></li>
+        </ul>
+      </div>  
+      </div> 
+      </footer>
 
 
-	<div class="main">
-
-		<section id="about">
-
-			<h2>Contact</h2>
-
-
-		<form>
-			<div id="name"  >
-				Name: <input type="text" name="Name" placeholder="Vladimir Putin"></div>
-			<br>
-			<div id="email">
-				Email: <input type="text" name="Email" placeholder="VladAndDonald4eva@russia.com">
-			<br>
-			</div>
-			<div id="message" >
-				Message: <textarea placeholder="What would you like to say to father Russia?"></textarea>
-			</div>
-			<br>
-			<a id="submitButton" href="#">Submit</a>
-
-		</form>
-
-		</section>
-
-		<aside>
-			<h3>Connect with Me</h3>
-
-			
-			<div id="icons">
-	
-				<a href="https://github.com/bonanastasia" target="_blank">
-				<img class="icon" src="assets/images/github_icon.png" alt="Github link">
-				</a>
-				
-				<a href="https://www.linkedin.com/in/anastasia-goodwin-02966755" target="_blank">
-				<img class="icon" src="assets/images/linkin_icon.png" alt="Linkedin link">
-				</a>
-
-				<a href="http://stackoverflow.com/users/7586124/anastasia-marie" target="_blank">
-				<img class="icon" src="assets/images/stack_overflow_icon.png" alt="StackOverflow link">
-				</a>
-			</div>	
-			
-		</aside>
-	
-	</div>
-
-
-	<footer>&copy; Copyright Anastasia Marie Goodwin</footer>
-
-</body>
+       <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="assets/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
